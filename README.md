@@ -16,14 +16,14 @@ To see the completed website please visit :
 
 To see the financial analysis please right click and click inspect element and navigate to the console, and the analysis should be present there as shown below.
 
-  Financial Analysis 
-  ----------------
-  Total Months: 86
-  Total: $38382578
-  Average Change: -2315.12
-  Greatest Increase in Profits/Losses: Feb-2012 ($1926159)
-  Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
-  ```
+Financial Analysis 
+----------------
+Total Months: 86
+Total: $38382578
+Average Change: -2315.12
+Greatest Increase in Profits/Losses: Feb-2012 ($1926159)
+Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
+
 
 ## Credits
 NA
