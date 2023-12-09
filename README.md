@@ -12,7 +12,7 @@ N/A
 
 ## Usage
 
-To see the completed website please visit : 
+To see the completed website please visit : https://akila504.github.io/Console-Finanaces/
 
 To see the financial analysis please right click and click inspect element and navigate to the console, and the analysis should be present there as shown below.
 
