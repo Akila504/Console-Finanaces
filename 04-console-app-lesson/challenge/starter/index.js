@@ -129,10 +129,14 @@ var finances = [
 // previous data point 
 
 /*total months*/
-console.log(`total Months ${finances.length}`)
+
 var netProf = finances[0][1]
 var previous = finances[0][1]
 var totalChange = 0
+var greatestIncrease = 0
+var greatestDecrease = 0
+var greatestIncreaseMonth
+var greatestDecreaseMonth
 
 /*Rolling Total of profits*/
 for (i = 1; i < finances.length; i++) {
@@ -144,13 +148,22 @@ for (i = 1; i < finances.length; i++) {
   change = finances[i][1] - previous
   previous = finances[i][1]
   totalChange = totalChange + change
+  if (change > greatestIncrease) {
+    greatestIncrease = change
+    greatestIncreaseMonth = finances[i][0]
+  }
+  if (change < greatestDecrease) {
+    greatestDecrease = change
+    greatestDecreaseMonth = finances[i][0]
+  }
 }
+
 
 averageChange = (totalChange) / (finances.length - 1)
 
+//rounding the average change to 2 dp
+averageChange = averageChange.toFixed(2)
 
-
-console.log(`Total is ${netProf}`)
-console.log(change)
-console.log(averageChange)
-
+console.log(`Financial Analysis\n---------------------- \n\ntotal Months: ${finances.length}\n
+Total: $${netProf}\n\nAverage Change: $ ${averageChange}\n\nGreatest Increase in Profits/Losses: ${greatestIncreaseMonth}, $${greatestIncrease}\n  
+Greatest decrease in Profits/Losses: ${greatestDecreaseMonth}, $ ${greatestDecrease} `)
