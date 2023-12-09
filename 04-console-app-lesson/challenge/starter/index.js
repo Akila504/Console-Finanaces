@@ -164,6 +164,6 @@ averageChange = (totalChange) / (finances.length - 1)
 //rounding the average change to 2 dp
 averageChange = averageChange.toFixed(2)
 
-console.log(`Financial Analysis\n---------------------- \n\ntotal Months: ${finances.length}\n
+console.log(`Financial Analysis\n---------------------- \n\nTotal Months: ${finances.length}\n
 Total: $${netProf}\n\nAverage Change: $ ${averageChange}\n\nGreatest Increase in Profits/Losses: ${greatestIncreaseMonth}, $${greatestIncrease}\n  
 Greatest decrease in Profits/Losses: ${greatestDecreaseMonth}, $ ${greatestDecrease} `)
